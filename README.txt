@@ -1,3 +1,6 @@
+This is a new solution to managing standard .py files that are needed for many projects. We can put them in a central location and then import them via the file path so we can keep these 'master' copies up to date in one place.
+
+
 you can use these matser files by first appending the sys path and then importing
 import sys
 sys.path.append(r"<PATH TO THIS FOLDER>")
