@@ -227,9 +227,9 @@ class grid:
     #region post timestamp
     def handle_update_stamps(self):
         '''grabs summary id, and then runs the function that posts the date'''
-        current_date = datetime.date.today()
+        current_date = date.today()
         formatted_date = current_date.strftime('%m/%d/%y')
-
+    
         sum_id = self.grabrcreate_sum_id("Last API Automation", "DATE")
         self.post_to_summary_field(sum_id, formatted_date)
     def grabrcreate_sum_id(self, field_name_str, sum_type):
